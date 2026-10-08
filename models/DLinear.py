@@ -10,7 +10,7 @@ class Model(nn.Module):
     Paper link: https://arxiv.org/pdf/2205.13504.pdf
     """
 
-    def __init__(self, configs, individual=False):
+    def __init__(self, configs):
         """
         individual: Bool, whether shared model among different variates.
         """
@@ -23,7 +23,7 @@ class Model(nn.Module):
             self.pred_len = configs.pred_len
         # Series decomposition block from Autoformer
         self.decompsition = series_decomp(configs.moving_avg)
-        self.individual = individual
+        self.individual = configs.individual
         self.channels = configs.enc_in
 
         if self.individual:
@@ -99,7 +99,7 @@ class Model(nn.Module):
         return output
 
     def forward(self, x_enc, x_mark_enc, x_dec, x_mark_dec, mask=None):
-        if self.task_name == 'long_term_forecast' or self.task_name == 'short_term_forecast':
+        if 'long_term_forecast' in self.task_name or self.task_name == 'short_term_forecast':
             dec_out = self.forecast(x_enc)
             return dec_out[:, -self.pred_len:, :]  # [B, L, D]
         if self.task_name == 'imputation':

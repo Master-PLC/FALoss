@@ -126,6 +126,8 @@ if __name__ == '__main__':
     parser.add_argument('--module_first', type=int, default=1, help='calculate module first then mean ')
     parser.add_argument('--leg_degree', type=int, default=2, help='degree of legendre polynomial')
     parser.add_argument('--offload', type=int, default=0)
+    parser.add_argument('--db_alpha', type=float, default=0.3, help="EMA smoothing coefficient for DBLoss decomposition")
+    parser.add_argument('--beta', type=float, default=0.5, help="season/trend balance weight for DBLoss")
 
     # GPU
     parser.add_argument('--use_gpu', type=bool, default=True, help='use gpu')
@@ -152,6 +154,19 @@ if __name__ == '__main__':
     parser.add_argument('--model_per_task', type=int, default=0, help='separate model for each task; True 1 False 0')
 
     parser.add_argument('--extra_metrics', action=EvalAction, default=[], help='extra_metrics')
+
+    # TimeBridge
+    parser.add_argument('--revin', type=int, default=1, help='RevIN; True 1 False 0')
+    parser.add_argument('--ia_layers', type=int, default=1, help='num of integrated attention layers')
+    parser.add_argument('--pd_layers', type=int, default=1, help='num of patch downsampled layers')
+    parser.add_argument('--ca_layers', type=int, default=0, help='num of cointegrated attention layers')
+    parser.add_argument('--stable_len', type=int, default=6, help='length of moving average in patch norm')
+    parser.add_argument('--num_p', type=int, default=0, help='num of down sampled patches')
+    parser.add_argument('--attn_dropout', type=float, default=0.15, help='dropout rate of attention map')
+    parser.add_argument('--period', type=int, default=24, help='length of patches')
+
+    # DLinear
+    parser.add_argument('--individual', type=int, default=0, help='individual head; True 1 False 0')
 
     args = parser.parse_args()
 

@@ -168,7 +168,8 @@ cython_debug/
 /checkpoints/
 /results/
 
-/dataset/
+dataset/
+!dataset/ETT-small/
 
 /result_long_term_forecast.txt
 /result_imputation.txt
