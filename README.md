@@ -5,7 +5,7 @@
 
 <p align="center"><i>Enhancing Time-series forecasting performance with frequency-enhanced adaptive learning objective.</i></p>
 
-<p align="center">
+<!-- <p align="center">
     <a href="https://github.com/Master-PLC/PyITS">
        <img alt="Python version" src="https://img.shields.io/badge/Python-v3.8+-E97040?logo=python&logoColor=white">
     </a>
@@ -19,15 +19,15 @@
         <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Master-PLC/fredf">
     </a>
     <a href="https://star-history.com/#Master-PLC/PyITS">
-        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Master-PLC/fredf">
+        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Master-PLC/PyITS">
     </a>
-    <a href="https://github.com/Master-PLC/PyITS/network/members">
-        <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/Master-PLC/fredf">
+    <a href="https://github.com/Master-PLC/FreDF/network/members">
+        <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/Master-PLC/FreDF">
     </a>
     <a href="https://github.com/Master-PLC/PyITS/blob/main/README.md">
         <img alt="README in English" src="https://pypots.com/figs/pypots_logos/readme/US.svg">
     </a>
-</p>
+</p> -->
 
 
 The repo is the official implementation for the paper: FALoss: Frequency-Enhanced Adaptive Learning Objective for Time-Series Forecasting.
