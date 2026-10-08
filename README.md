@@ -3,7 +3,7 @@
 
 <h3 align="center">Welcome to FALoss</h3>
 
-<p align="center"><i>Enhancing Time-series forecasting performance with one-line code.</i></p>
+<p align="center"><i>Enhancing Time-series forecasting performance with frequency-enhanced adaptive learning objective.</i></p>
 
 <p align="center">
     <a href="https://github.com/Master-PLC/PyITS">
@@ -15,13 +15,16 @@
     <a href="https://github.com/Master-PLC/PyITS">
         <img alt="MIT license" src="https://img.shields.io/badge/License-MIT-E9BB41?logo=opensourceinitiative&logoColor=white">
     </a>
+    <a href="https://star-history.com/#Master-PLC/FreDF">
+        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Master-PLC/fredf">
+    </a>
     <a href="https://star-history.com/#Master-PLC/PyITS">
         <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Master-PLC/fredf">
     </a>
     <a href="https://github.com/Master-PLC/PyITS/network/members">
         <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/Master-PLC/fredf">
     </a>
-   <a href="https://github.com/Master-PLC/PyITS/blob/main/README.md">
+    <a href="https://github.com/Master-PLC/PyITS/blob/main/README.md">
         <img alt="README in English" src="https://pypots.com/figs/pypots_logos/readme/US.svg">
     </a>
 </p>
